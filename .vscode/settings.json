@@ -1,3 +1,29 @@
 {
-    "python.pythonPath": "env/bin/python"
+    "python.pythonPath": "env/bin/python",
+    "python.linting.pep8Enabled": true,
+    "python.linting.pylintPath": "env/bin/pylint",
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django"
+    ],
+    "python.linting.pylintEnabled": true,
+    "editor.formatOnSave": true,
+    // Add Ruler in Editor
+    "editor.rulers": [
+        80,
+        120
+    ],
+    // Ignoring Unnecessary Files
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        ".vscode": true,
+        "**/*.pyc": true,
+        "**/__pycache__/": true
+    },
+    // Increase Zoom Level
+    "window.zoomLevel": 0.35 // add any value
 }
